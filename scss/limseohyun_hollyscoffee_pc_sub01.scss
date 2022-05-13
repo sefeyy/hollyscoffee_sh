@@ -1,0 +1,292 @@
+html{
+    font-size: 3vw;
+}
+body{
+    font-size: 0.7vw;
+    /* height: 700vw; */
+}
+
+$hdr01 : #{'min(2em,20px)'};
+$cnt01 : #{'min(2.5em,25px)'};
+$cnt02 : #{'min(2rem,80px)'};
+$cnt03 : #{'min(7rem,280px)'};
+$cnt04 : #{'min(3em,30px)'};
+$cnt05 : #{'min(0.1em,4px)'};
+$cnt06 : #{'min(6rem,240px)'};
+$bnr01 : #{'min(5em,50px)'};
+$bnr02 : #{'min(14rem,560px)'};
+$cnt07 : #{'min(1rem,40px)'};
+$cnt08 : #{'min(1.8em,18px)'};
+
+// 헤더
+.hdrWrap{
+    padding: 40px 0px;
+    header{
+        width: 80%;
+        max-width: 1080px;
+        margin: 0 auto;
+        justify-content: space-between;
+        display: flex;
+        h1{
+            width: calc(100% / 12 * 5);
+        }
+        nav{
+            width: calc(100% / 12 * 6);
+            justify-content: space-between;
+            display: flex;
+            h4{
+                font-size: $hdr01;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+// 컨텐츠 공통
+.cntWrap{
+    margin-top: 120px;
+    .content{
+        width: 80%;
+        max-width: 1080px;
+        margin: 0 auto;
+        header{
+            h2{
+                font-size: $cnt01;
+                text-transform: capitalize;
+                font-weight: 700;
+                text-align: center;
+                line-height: $cnt02;
+            }
+        }
+        section{
+            margin-top: $cnt02;;
+        }
+    }
+}
+// 컨텐츠1
+.content.cnt01{
+    header{}
+    section{
+        article{
+            width: calc(100% / 12 * 5 - 20px);
+            .image{}
+            .texts{
+                h5{
+                    font-weight: 700;
+                    font-size: $hdr01;
+
+                    &::after{
+                        content: '';
+                        display: block;
+                        background-color: #000;
+                        width: 30px;
+                        height: $cnt05;
+                    }
+                }
+                h3{
+                    font-size: $cnt04;
+                    text-transform: capitalize;
+                    font-weight: 700;
+                    line-height: $cnt02
+                }
+                p{
+                    font-size: $hdr01
+                }
+                .ovrGrid{
+                    height: $cnt03;
+                    background-color: pink;
+                    // min-width: ((100vw - 80vw) / 2 + 100%);
+                    // width: ((100vw - 1080px) / 2 + 100%);
+                }
+            }
+        }
+    }
+}
+
+// 컨텐츠2
+.cntWrap{
+    .content.cnt02{
+        header{}
+        section{
+            .artTop{
+                justify-content: space-between;
+                display: flex;
+                article{
+                    width: calc(100% / 4 - 20px);
+                    .image{
+                        background-color: #f0d393;
+                        height: $cnt06;
+                        border-radius: 60%;
+                    }
+                    .texts{
+                        text-align: center;
+                        line-height: $cnt02;
+                        h3{
+                            font-size: $hdr01;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+            .artBtm{
+                justify-content: space-between;
+                display: flex;
+                article{
+                    width: calc(100% / 4 - 20px);
+                    .image{
+                        background-color: #f0d393;
+                        height: $cnt06;
+                        border-radius: 60%;
+                    }
+                    .texts{
+                        text-align: center;
+                        line-height: $cnt02;
+                        h3{
+                            font-size: $hdr01;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 배너
+.bnrWrap{
+    margin-top: 120px;
+    .banner{
+        text-align: center;
+        height: $bnr02;
+        background-color: pink;
+        padding: 120px 0px;
+        h3{
+            font-size: $bnr01;
+            text-transform: capitalize;
+            font-weight: 700;
+            line-height: $cnt02;
+            &::after{
+                width: 350px;
+                height: $cnt05;
+                background-color: #000;
+                content: '';
+                display: block;
+                margin: auto;
+            }
+        }
+        h5{
+            font-size: $cnt01;
+            margin: 40px 0px;
+        }
+        .btn{
+            font-size: $hdr01;
+            background-color: #fff;
+            width: calc(100% / 12 * 2);
+            font-weight: 700;
+            text-align: center;
+            border-radius: 5px;
+            border: 2px solid #000;
+            margin: auto;
+            margin-top: 40px;
+            line-height: $cnt02;
+        }
+    }
+}
+
+// 컨텐츠3
+.content.cnt03{
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+    header{
+        h1{
+            font-size: $cnt01;
+            text-transform: capitalize;
+            font-weight: 700;
+            text-align: center;
+        }
+    }
+    section{
+        article{
+            width: calc(100% / 12 * 5 - 20px);
+            .texts{
+                h5{
+                    font-size: $hdr01;
+                    font-weight: 700;
+                    &::after{
+                        content: '';
+                        display: block;
+                        background-color: #000;
+                        width: 30px;
+                        height: $cnt05;
+                    }
+                }
+                h3{
+                    font-size: $cnt04;
+                    text-transform: capitalize;
+                    font-weight: 700;
+                    line-height: $cnt02;
+                }
+                p{
+                    font-size: $hdr01;
+                }
+                .ovrGrid{
+                    height: $cnt03;
+                    background-color: pink;
+
+                }
+            }
+            .image{}
+        }
+    }
+}
+
+// 푸터
+.ftrWrap{
+    margin-top: 80px;
+    footer{
+        width: 80%;
+        max-width: 1080px;
+        margin: 0 auto;
+        justify-content: space-between;
+        display: flex;
+        padding: 80px 0px;
+        .ftrLeft{
+            h1{}
+            h4{
+                margin-top: 160px;
+                color: gray;
+                font-size: $cnt08;
+            }
+        }
+        .ftrRight{
+            nav{
+                justify-content: space-between;
+                display: flex;
+                h4{
+                    margin-left: 50px;
+                    font-size: $hdr01;
+                    text-transform: capitalize;
+                    line-height: $cnt02;
+                    font-weight: 700;
+                }
+            }
+            .sns{
+                text-align: right;
+                font-size: $cnt04;
+            }
+            .contact{
+                width: calc(100% / 6 * 5);
+                text-align: right;
+                font-size: $hdr01;
+                background-color: #af3939;
+                text-align: center;
+                border-radius: 30px;
+                color: #fff;
+                line-height: $cnt04;
+                margin-left: 60px;
+                margin-top: 40px;
+            }
+        }
+    }
+}

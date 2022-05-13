@@ -1,0 +1,356 @@
+html {
+  font-size: 3vw;
+}
+
+body {
+  font-size: 0.7vw;
+  /* height: 700vw; */
+}
+
+.hdrWrap {
+  padding: 40px 0px;
+}
+.hdrWrap header {
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+  justify-content: space-between;
+  display: flex;
+}
+.hdrWrap header h1 {
+  width: 41.6666666667%;
+}
+.hdrWrap header nav {
+  width: 50%;
+  justify-content: space-between;
+  display: flex;
+  font-family: "robo";
+}
+.hdrWrap header nav h4 {
+  font-size: min(2em,20px);
+  text-transform: uppercase;
+}
+
+.mainWrap main {
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+  position: relative;
+}
+.mainWrap main .imageView {
+  width: calc(58.3333333333% - 20px);
+  direction: rtl;
+}
+.mainWrap main .imageView .ovrGrid {
+  height: min(16rem,640px);
+  min-width: calc(60vw + 100%);
+  width: calc(100vw - 540px + 100%);
+}
+.mainWrap main .imageView .imageGroup {
+  width: 500%;
+  position: relative;
+  justify-content: space-between;
+  display: flex;
+  height: min(16rem,640px);
+}
+.mainWrap main .imageView .imageGroup .image {
+  width: calc(58.3333333333% - 20px);
+  position: absolute;
+  height: min(16rem,640px);
+  top: -640px;
+}
+.mainWrap main .imageView .imageGroup .image.image.i2 {
+  background-color: red;
+}
+.mainWrap main .imageView .imageGroup .image.image.i3 {
+  background-color: fuchsia;
+}
+.mainWrap main .imageView .imageGroup .image.image.i4 {
+  background-color: darkcyan;
+}
+.mainWrap main .imageView .imageGroup .image.image.i5 {
+  background-color: khaki;
+}
+.mainWrap main .imageView .imageGroup .image.image.i1 {
+  background-color: olive;
+}
+.mainWrap main .image2View {
+  width: calc(58.3333333333% - 20px);
+  position: absolute;
+  top: 400px;
+}
+.mainWrap main .image2View .ovrGrid {
+  background-color: gray;
+  height: min(8rem,320px);
+  min-width: calc(60vw + 100%);
+  width: calc(100vw - 540px + 100%);
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./image/hollysmain/main/sub1.jpg");
+}
+.mainWrap main .textView h2 {
+  font-size: 72px;
+  font-weight: 700;
+  text-transform: uppercase;
+  right: 0;
+  top: 80px;
+  position: absolute;
+}
+.mainWrap main .btn {
+  font-size: 40px;
+  justify-content: space-between;
+  display: flex;
+  left: -100px;
+  position: absolute;
+  color: #854c38;
+  top: 650px;
+}
+.cntWrap:nth-child(3) {
+  margin-top: -400px;
+}
+.cntWrap:nth-child(3) .content.cnt01 {
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.cntWrap:nth-child(3) .content.cnt01 header h2 {
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-align: center;
+}
+.cntWrap:nth-child(3) .content.cnt01 section {
+  margin-top: 80px;
+  justify-content: space-between;
+  display: flex;
+}
+.cntWrap:nth-child(3) .content.cnt01 section article {
+  width: calc(25% - 20px);
+  position: relative;
+}
+.cntWrap:nth-child(3) .content.cnt01 section article .image {
+  background-color: pink;
+  height: min(11rem,440px);
+}
+.cntWrap:nth-child(3) .content.cnt01 section article .texts {
+  position: absolute;
+  padding: 40px 0px;
+  margin-top: -300px;
+  padding: 40px 40px;
+  background-color: #ccc;
+  width: 100%;
+  text-align: center;
+}
+.cntWrap:nth-child(3) .content.cnt01 section article .texts h3 {
+  font-size: min(2em,20px);
+  font-weight: 700;
+  text-align: center;
+}
+.cntWrap:nth-child(3) .content.cnt01 section article .texts h3::after {
+  width: 35px;
+  height: min(0.1rem,4px);
+  background-color: #000;
+  content: "";
+  display: block;
+  line-height: min(1rem,40px);
+  margin: auto;
+}
+.cntWrap:nth-child(3) .content.cnt01 section article .texts h4 {
+  font-size: min(1.8em,18px);
+  font-weight: 700;
+  line-height: min(1rem,40px);
+  text-align: center;
+}
+
+.bnrWrap {
+  margin-top: 120px;
+}
+.bnrWrap .banner {
+  background-color: pink;
+  padding: 120px;
+  text-align: center;
+}
+.bnrWrap .banner h2 {
+  font-size: min(5em,50px);
+  line-height: min(2rem,80px);
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.bnrWrap .banner h2::after {
+  width: 530px;
+  height: min(0.1rem,4px);
+  background-color: #000;
+  content: "";
+  display: block;
+  margin: auto;
+}
+.bnrWrap .banner h5 {
+  font-size: min(2.5em,25px);
+  margin-top: 40px;
+  line-height: min(1rem,40px);
+}
+.bnrWrap .banner .btn {
+  width: 16.6666666667%;
+  line-height: min(2rem,80px);
+  font-weight: 700;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid #000;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.cntWrap02 {
+  margin-top: 120px;
+}
+.cntWrap02 .content.cnt02 {
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.cntWrap02 .content.cnt02 header h2 {
+  font-size: min(2.5em,25px);
+  text-transform: capitalize;
+  font-weight: 700;
+  text-align: center;
+}
+.cntWrap02 .content.cnt02 section {
+  margin-top: 80px;
+  justify-content: space-between;
+  display: flex;
+}
+.cntWrap02 .content.cnt02 section article {
+  width: calc(25% - 20px);
+}
+.cntWrap02 .content.cnt02 section article .image {
+  width: 100%;
+  background-color: pink;
+  height: min(6rem,240px);
+  border-radius: 60%;
+}
+.cntWrap02 .content.cnt02 section article .texts {
+  font-size: min(2em,20px);
+  font-weight: 700;
+  text-align: center;
+  line-height: min(2rem,80px);
+}
+
+.cntWrap03 {
+  margin-top: 120px;
+}
+.cntWrap03 .content.cnt03 {
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.cntWrap03 .content.cnt03 header h2 {
+  text-align: center;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: min(2.5em,25px);
+}
+.cntWrap03 .content.cnt03 section {
+  margin-top: 80px;
+}
+.cntWrap03 .content.cnt03 section article {
+  display: flex;
+  margin: 20px 0px;
+}
+.cntWrap03 .content.cnt03 section article .images {
+  width: calc(50% - 20px);
+  background-color: pink;
+  height: min(7rem,280px);
+}
+.cntWrap03 .content.cnt03 section article .texts {
+  height: min(7rem,280px);
+  width: 66.6666666667%;
+  background-color: #e6aa95;
+  padding: 40px 0px;
+}
+.cntWrap03 .content.cnt03 section article .texts:nth-child(1) {
+  background-color: #f0d393;
+}
+.cntWrap03 .content.cnt03 section article .texts:nth-child(3) {
+  background-color: #e6aa95;
+}
+.cntWrap03 .content.cnt03 section article .texts h5 {
+  font-size: min(2em,20px);
+  font-weight: 700;
+  color: #a02b2b;
+}
+.cntWrap03 .content.cnt03 section article .texts h3 {
+  font-size: min(3em,30px);
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.cntWrap03 .content.cnt03 section article .texts p {
+  font-size: min(2em,20px);
+}
+.cntWrap03 .content.cnt03 section article .texts .ovrGrid {
+  min-width: calc(10vw + 100%);
+  width: calc((100vw - 1080px) / 2 + 100%);
+  height: min(7rem,280px);
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+.cntWrap03 .content.cnt03 section article:nth-child(1) {
+  flex-direction: row-reverse;
+}
+.cntWrap03 .content.cnt03 section article:nth-child(3) {
+  flex-direction: row-reverse;
+}
+.cntWrap03 .content.cnt03 section article:nth-child(2) .texts {
+  background-color: #f0d393;
+  right: 0;
+}
+.cntWrap03 .content.cnt03 section article:nth-child(2) .texts h5 {
+  color: #c89b39;
+}
+
+.ftrWrap {
+  margin-top: 80px;
+}
+.ftrWrap footer {
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+  justify-content: space-between;
+  display: flex;
+  padding: 80px 0px;
+}
+.ftrWrap footer .ftrLeft h4 {
+  margin-top: 160px;
+  color: gray;
+  font-size: min(1.8em,18px);
+}
+.ftrWrap footer .ftrRight nav {
+  justify-content: space-between;
+  display: flex;
+}
+.ftrWrap footer .ftrRight nav h4 {
+  margin-left: 50px;
+  font-size: min(2em,20px);
+  text-transform: capitalize;
+  line-height: min(2rem,80px);
+  font-weight: 700;
+}
+.ftrWrap footer .ftrRight .sns {
+  text-align: right;
+  font-size: min(3em,30px);
+}
+.ftrWrap footer .ftrRight .contact {
+  width: 83.3333333333%;
+  text-align: right;
+  font-size: min(2em,20px);
+  background-color: #af3939;
+  text-align: center;
+  border-radius: 30px;
+  color: #fff;
+  line-height: min(1rem,40px);
+  margin-left: 60px;
+  margin-top: 40px;
+}/*# sourceMappingURL=limseohyun_hollycoffee_pc_main33.css.map */
